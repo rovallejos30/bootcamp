@@ -6,8 +6,8 @@ public class HenHouse {
 
     private Hen [] henHouseCapacity;
 
-    public void setHenhousename(String location) {
-        this.henhousename = location;
+    public void setHenhousename(String name) {
+        this.henhousename = name;
     }
 
     public String getHenhousename() {
