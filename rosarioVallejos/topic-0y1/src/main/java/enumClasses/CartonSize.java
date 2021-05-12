@@ -2,6 +2,6 @@ package enumClasses;
 
     public enum CartonSize{
 
-        SMALL,MEDIUM,LARGE;
+        SMALL,MEDIUM,LARGE
 
     }
