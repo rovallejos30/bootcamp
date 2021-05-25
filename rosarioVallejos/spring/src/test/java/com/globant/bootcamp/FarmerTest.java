@@ -1,6 +1,8 @@
+package com.globant.bootcamp;
+
+import com.globant.bootcamp.enumClasses.CartonSize;
 import com.globant.bootcamp.modelling.Egg;
 import com.globant.bootcamp.modelling.Farmer;
-import enumClasses.CartonSize;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -18,7 +20,7 @@ public class FarmerTest {
     @Parameterized.Parameters
     public static Iterable<Object[]> getData(){
         return Arrays.asList(new Object[][]{
-                {2,30,70,CartonSize.LARGE,3},
+                {2,30,70, CartonSize.LARGE,3},
                 {2,70,30,CartonSize.MEDIUM,6},
                 {2,50,100,CartonSize.SMALL,0},
         });

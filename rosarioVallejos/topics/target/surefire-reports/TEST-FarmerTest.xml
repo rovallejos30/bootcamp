@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="FarmerTest" time="0.09" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="FarmerTest" time="0.09" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2020.3.4"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.10+9"/>
     <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\rosar\Documents\Cursos\bootcamp\rosarioVallejos\topic-0y1"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\rosar\Documents\Cursos\bootcamp\rosarioVallejos\topics"/>
     <property name="java.vm.vendor" value="AdoptOpenJDK"/>
     <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="AR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\rosar\Documents\Cursos\bootcamp\rosarioVallejos\topic-0y1"/>
+    <property name="user.dir" value="C:\Users\rosar\Documents\Cursos\bootcamp\rosarioVallejos\topics"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="11.0.10+9"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -64,6 +64,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="FarmerTest" name="testReceiveOrder[0]" time="0.09"/>
-  <testcase classname="FarmerTest" name="testReceiveOrder[1]" time="0"/>
+  <testcase classname="FarmerTest" name="testReceiveOrder[0]" time="0.082"/>
+  <testcase classname="FarmerTest" name="testPlaceEggsInCartonSize[0]" time="0.004"/>
+  <testcase classname="FarmerTest" name="testReceiveOrder[1]" time="0.001"/>
+  <testcase classname="FarmerTest" name="testPlaceEggsInCartonSize[1]" time="0"/>
+  <testcase classname="FarmerTest" name="testReceiveOrder[2]" time="0.003"/>
+  <testcase classname="FarmerTest" name="testPlaceEggsInCartonSize[2]" time="0"/>
 </testsuite>
