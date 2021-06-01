@@ -1,0 +1,39 @@
+<html >
+<head th:insert="fragments.html :: headerfiles">
+</head>
+<body>
+<header th:insert="fragments.html :: nav"></header>
+<form th:action="@{/crearUsuario}" th:object="${Usuario}" method="POST">
+	<span th:if="${Usuario.id !=null}"><input type="text" th:field="${Usuario.id}" readonly></span>
+	<input type="text" placeholder="Name" th:field="${Usuario.firstName}"/>
+	<input type="text" placeholder="Last Name" th:field="${Usuario.lastName}"/>
+	<input type="text" placeholder="Email" th:field="${Usuario.email}"/>
+	<input type="Submit" th:value="${Usuario.id != null }?'Save':'Create'"/>
+</form>
+
+<table border="1" align="center">
+	<thead>
+	<tr>
+		<th>ID</th>
+		<th>NAME</th>
+		<th>LAST NAME</th>
+		<th>EMAIL</th>
+		<th>ACTIONS</th>
+
+	</tr>
+	</thead>
+	<tbody>
+	<tr th:each="Usuario : ${Usuarios}">
+		<td th:text="${Usuario.id}"></td>
+		<td th:text="${Usuario.firstName}"></td>
+		<td th:text="${Usuario.lastName}"></td>
+		<td th:text="${Usuario.email}"></td>
+		<td><a th:href="@{'/editarUsuario/'+ ${Usuario.id}}"> Editar </a> | <a th:href="@{'/eliminarUsuario/' + ${Usuario.id}}">Eliminar</a></td>
+	</tr>
+
+	</tbody>
+
+
+</table>
+</body>
+</html>
