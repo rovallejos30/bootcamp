@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productId;
 
     @Column
@@ -38,7 +38,7 @@ public class Product {
     }
 
 
-    public long getProductId() {
+    public Long getProductId() {
         return productId;
     }
 
@@ -77,14 +77,14 @@ public class Product {
     public void setImage(String image) {
        this.image = image;
     }
-//
-//    public Category getCategory() {
-//        return category;
-//    }
-//
-//    public void setCategory(Category category) {
-//        this.category = category;
-//    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 
 
 

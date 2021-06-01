@@ -20,12 +20,12 @@ public class ProductController {
     }
 
     @PostMapping
-    public void insertProd(@RequestBody Product product){
+    public void insProd(@RequestBody Product product){
         productRepository.save(product);
     }
 
     @PutMapping
-    public void updateProd(@RequestBody Product product){
+    public void updProd(@RequestBody Product product){
         productRepository.save(product);
     }
 
