@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<!-- Fragment #1 : Headerfiles contains css and js references -->
 <head th:fragment="headerfiles">
 <meta charset="ISO-8859-1">
 <title>Maples-Shop</title>
@@ -8,8 +7,6 @@
 <link th:href="@{~/fontawesome/css/all.css}" rel="stylesheet">
 </head>
 <body>
-
-	<!-- Fragment #2 : Navbar contains nav links -->
 	<div th:fragment="nav">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 			<div class="container">
@@ -22,7 +19,7 @@
 				</ul>
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="#"
-						th:href="@{/indexes}"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Farmers</a></li>
+						th:href="@{/indexes}"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Users</a></li>
 				</ul>
 			</div>
 			</div>

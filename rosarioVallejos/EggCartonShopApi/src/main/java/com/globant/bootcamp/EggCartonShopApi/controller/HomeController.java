@@ -14,7 +14,7 @@ public class HomeController {
 
 	@Autowired
 	private CategoryService categoryService;
-	
+
 	@Autowired
 	private ProductService productService;
 	
