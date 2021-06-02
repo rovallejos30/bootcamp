@@ -8,6 +8,6 @@ public interface ProductService {
 
 	public List<Product> listProduct();
 
-	public List<Product> findByCategory(long categoryId);
+	public List<Product> findByCategory(Long categoryId);
 
 }

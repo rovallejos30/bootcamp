@@ -11,10 +11,10 @@ public interface CategoryService {
 	
 	public List<Category> listCategory();
 	
-	public void deleteCategory(long categoryId);
+	public void deleteCategory(Long categoryId);
 	
 	public void updateCategory(Category category);
 	
-	public Optional<Category> getCategory(long categoryId);
+	public Optional<Category> getCategory(Long categoryId);
 	
 }

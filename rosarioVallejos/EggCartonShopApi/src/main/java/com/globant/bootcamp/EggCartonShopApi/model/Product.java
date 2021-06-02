@@ -1,29 +1,27 @@
 package com.globant.bootcamp.EggCartonShopApi.model;
 
-
 import javax.persistence.*;
 
 @Entity
+@Table(name = "product")
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productId;
 
-    @Column
     private String productName;
 
     private String productDescription;
 
-    @Column
     private int productPrice;
 
     private String image;
 
+
     @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "category_id")
-    private Category category = new Category();
-
+    private Category category;
 
     public Product() {
 
@@ -85,8 +83,5 @@ public class Product {
     public void setCategory(Category category) {
         this.category = category;
     }
-
-
-
 }
 
