@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -19,4 +20,11 @@ public class UserServiceImpl implements UserService{
     public List<User> listUsers() {
         return userRepository.findAll();
     }
+
+    @Override
+    public Optional<User> findByName(String nickName) {
+            return  userRepository.findUserByNickName(nickName);
+        }
+
+
 }

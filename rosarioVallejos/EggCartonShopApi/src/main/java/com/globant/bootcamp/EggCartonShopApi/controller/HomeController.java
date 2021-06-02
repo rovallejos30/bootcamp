@@ -1,5 +1,6 @@
 package com.globant.bootcamp.EggCartonShopApi.controller;
 
+import com.globant.bootcamp.EggCartonShopApi.model.User;
 import com.globant.bootcamp.EggCartonShopApi.service.CategoryService;
 import com.globant.bootcamp.EggCartonShopApi.service.ProductService;
 import com.globant.bootcamp.EggCartonShopApi.service.UserService;
