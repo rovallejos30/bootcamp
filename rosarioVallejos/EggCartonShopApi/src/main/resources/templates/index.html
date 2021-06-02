@@ -9,7 +9,7 @@
 		<h1 class="display-5">Productos</h1>
 
 		<div class="d-flex justify-content-start p-2">
-			<a class="list-group-item mr-2" href="#" th:href="@{/allProduct}">Todos los <productos></productos></a>
+			<a class="list-group-item mr-2" href="#" th:href="@{/allProduct}">Todos los productos <productos></productos></a>
 			<a class="list-group-item mr-2"	th:each="category : ${categoryList}"
 				th:text="${category.categoryName}" href="#" th:href="@{'/getProducts/' + ${category.categoryId}}"></a>
 		</div>
@@ -22,7 +22,6 @@
 						<h5 th:text="${product.productName}" class="card-title"></h5>
 						<p th:text="${product.productDescription}" class="card-text"></p>
 						<p th:text="'$ '+${product.productPrice}" class="card-text"></p>
-						<a th:each="Producto : ${Productos}" class="btn btn-primary">Añadir Producto</a>
 					</div>
 				</div>
 			</div>
