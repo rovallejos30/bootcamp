@@ -37,12 +37,10 @@ public class HomeController {
 		return "index";
 	}
 
-		@GetMapping("getProducts/{categoryId}")
-		public ModelAndView getProductFromCategory(@PathVariable("categoryId")String categoryId) {
+	@GetMapping("getProducts/{categoryId}")
+	public ModelAndView getProductFromCategory(@PathVariable("categoryId")Long categoryId) {
 		ModelAndView mv = new ModelAndView("index");
-		long categoryLongId = Long.parseLong(categoryId);
-		System.out.println(categoryLongId);
-		mv.addObject("productList", productService.findByCategory(categoryLongId));
+		mv.addObject("productList", productService.findByCategory(categoryId));
 		mv.addObject("categoryList", categoryService.listCategory());
 		return mv;
 	}

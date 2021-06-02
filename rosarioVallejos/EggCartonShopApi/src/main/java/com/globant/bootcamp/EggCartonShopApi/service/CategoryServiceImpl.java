@@ -15,30 +15,10 @@ public class CategoryServiceImpl implements CategoryService{
 
 	@Autowired
 	private CategoryRepository categoryRepository;
-	
-	@Override
-	public void addCategory(Category category) {
-		categoryRepository.save(category);
-	}
 
 	@Override
 	public List<Category> listCategory() {
 		return categoryRepository.findAll();
-	}
-
-	@Override
-	public void deleteCategory(Long categoryId) {
-		categoryRepository.deleteById(categoryId);
-	}
-
-	@Override
-	public void updateCategory(Category category) {
-		categoryRepository.save(category);
-	}
-
-	@Override
-	public Optional<Category> getCategory(Long categoryId) {
-		return categoryRepository.findById(categoryId);
 	}
 
 }
