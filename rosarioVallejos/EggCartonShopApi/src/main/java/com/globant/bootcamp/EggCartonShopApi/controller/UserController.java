@@ -1,6 +1,6 @@
 package com.globant.bootcamp.EggCartonShopApi.controller;
 
-import com.globant.bootcamp.EggCartonShopApi.dao.UserRepository;
+import com.globant.bootcamp.EggCartonShopApi.repository.UserRepository;
 import com.globant.bootcamp.EggCartonShopApi.model.User;
 import com.globant.bootcamp.EggCartonShopApi.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;

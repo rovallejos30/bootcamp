@@ -1,4 +1,4 @@
-package com.globant.bootcamp.EggCartonShopApi.dao;
+package com.globant.bootcamp.EggCartonShopApi.repository;
 
 import com.globant.bootcamp.EggCartonShopApi.model.Category;
 import org.springframework.data.jpa.repository.JpaRepository;

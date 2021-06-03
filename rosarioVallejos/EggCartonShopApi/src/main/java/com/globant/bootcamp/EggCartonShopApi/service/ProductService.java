@@ -6,8 +6,8 @@ import java.util.List;
 
 public interface ProductService {
 
-	public List<Product> listProduct();
+	 List<Product> listProduct();
 
-	public List<Product> findByCategory(Long categoryId);
+	 List<Product> findByCategory(Long categoryId);
 
 }

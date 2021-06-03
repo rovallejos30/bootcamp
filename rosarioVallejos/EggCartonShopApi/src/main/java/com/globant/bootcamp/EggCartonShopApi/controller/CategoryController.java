@@ -1,6 +1,6 @@
 package com.globant.bootcamp.EggCartonShopApi.controller;
 
-import com.globant.bootcamp.EggCartonShopApi.dao.CategoryRepository;
+import com.globant.bootcamp.EggCartonShopApi.repository.CategoryRepository;
 import com.globant.bootcamp.EggCartonShopApi.model.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
