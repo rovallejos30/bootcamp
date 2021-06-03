@@ -20,18 +20,25 @@ public class ProductController {
     }
 
     @PostMapping
-    public void insProd(@RequestBody Product product){
+    public String insProd(@RequestBody Product product){
+
         productRepository.save(product);
+        return "Producto creado";
+
     }
 
     @PutMapping
-    public void updProd(@RequestBody Product product){
+    public String updProd(@RequestBody Product product){
+
         productRepository.save(product);
+        return "Producto actualizado";
+
     }
 
     @DeleteMapping(value="/{id}")
-    public void deleteProd(@PathVariable("id") Long id){
+    public String deleteProd(@PathVariable("id") Long id){
         productRepository.deleteById(id);
+        return "Producto eliminado";
 
     }
 

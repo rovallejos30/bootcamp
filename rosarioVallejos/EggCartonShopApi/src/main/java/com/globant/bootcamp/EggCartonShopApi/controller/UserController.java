@@ -25,27 +25,29 @@ public class UserController {
     }
 
     @PostMapping
-    public void insUser(@RequestBody User user) {
+    public String insUser(@RequestBody User user) {
         if (userRepository.findUserByNickName(user.getNickName()).isEmpty()) {
             userRepository.save(user);
-        }
+            return "creado";
+        } else return "no creado";
     }
 
     @GetMapping(value="/{nickName}")
-    public Optional<User> getUserByNickName(@RequestBody User user){
+    public Optional<User> getUserByNickName(User user){
             return userRepository.findUserByNickName(user.getNickName());
         }
 
 
     @PutMapping
-    public void updUser(@RequestBody User user){
+    public String updUser(@RequestBody User user){
         userRepository.save(user);
+        return "usuario actualizado";
     }
 
     @DeleteMapping(value="/{id}")
-    public void deleteProd(@PathVariable("id") Long id){
+    public String deleteProd(@PathVariable("id") Long id){
         userRepository.deleteById(id);
-
+        return "usuario eliminado";
     }
 
 }

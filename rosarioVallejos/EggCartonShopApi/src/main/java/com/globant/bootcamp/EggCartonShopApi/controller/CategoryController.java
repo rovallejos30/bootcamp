@@ -15,21 +15,27 @@ public class CategoryController {
         CategoryRepository categoryRepository;
 
         @GetMapping
-        public List<Category> getCat() {
-            return categoryRepository.findAll();
+        public List <Category> getCat() {
+                return categoryRepository.findAll();
         }
 
         @PostMapping
-        public void insCat(@RequestBody Category category){ categoryRepository.save(category);}
+        public String insCat(@RequestBody Category category){
+                categoryRepository.save(category);
+                return "Categoria insertada";
+        }
 
         @PutMapping
-        public void updCat(@RequestBody Category category){
-            categoryRepository.save(category);
+        public String updCat(@RequestBody Category category){
+
+                categoryRepository.save(category);
+                return "Categoria actualizada";
+
         }
 
         @DeleteMapping(value="/{id}")
-        public void deleteProd(@PathVariable("id") Long id){
+        public String deleteProd(@PathVariable("id") Long id){
             categoryRepository.deleteById(id);
-
+            return "Categoria eliminada";
         }
 }
