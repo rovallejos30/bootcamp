@@ -29,7 +29,7 @@ public class UserController {
         if (userRepository.findUserByNickName(user.getNickName()).isEmpty()) {
             userRepository.save(user);
             return "creado";
-        } else return "no creado";
+        } else return "no creado, ya existe ese nickname";
     }
 
     @GetMapping(value="/{nickName}")

@@ -35,7 +35,7 @@ public class FileUploadServiceImpl implements FileUploadService {
 
 	private String generateFileName(String file) {
 		String ext = file.substring(file.lastIndexOf("."));
-		String fileName = System.currentTimeMillis() + ext;
+		String fileName = ext;
 		return fileName;
 	}
 
